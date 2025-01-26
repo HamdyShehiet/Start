@@ -1,4 +1,27 @@
-/* 
-font-family: "Crimson Text", serif;
-font-family: "Work Sans", serif;
-*/
+
+:root{
+    --green-color-100:#74c69d;
+    --green-color-75:rgba(116, 198, 157, 0.75);
+    --green-color-50:rgba(116, 198, 157, 0.50);
+    --green-color-25:rgba(116, 198, 157, 0.25);
+    --dark-color-100:rgb(33, 37, 41);
+    --dark-color-75:rgba(33, 37, 41, 0.75);
+    --dark-color-50:rgba(33, 37, 41, 0.50);
+    --dark-color-25:rgba(33, 37, 41, 0.25);
+    --white-color-100:rgb(255, 255, 255);
+    --white-color-75:rgba(255, 255, 255, 0.75);
+    --white-color-50:rgba(255, 255, 255, 0.50);
+    --white-color-25:rgba(255, 255, 255, 0.25);
+    --f-family:  "Crimson Text", serif;
+    --f-family:  "Work Sans", serif;
+    --fs-40px:40px;
+    --fs-32px:32px;
+    --fs-28px:28px;
+    --fs-24px:24px;
+    --fs-20px:20px;
+    --fs-16px:16px;
+    --fs-15px:15px;
+    --fw-700:700;
+    --fw-400:400;
+    --main-section-padding: 40px 0;
+}
