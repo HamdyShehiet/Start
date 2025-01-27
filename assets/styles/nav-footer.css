@@ -103,3 +103,31 @@ header .container nav ul li a{
         gap: 30px;
     }
 }
+footer{
+    padding: 40px 0;
+    background-color: var(--green-color-100);
+}
+footer .container{
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: var(--ff-work-sans);
+    font-size: clamp(var(--fs-20px) - 6px ,5vw ,var(--fs-20px));
+    color: var(--white-color-100);
+}
+footer .container .social-links{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+@media (max-width:991px) {
+    footer .container{
+        justify-content: center;
+        gap:20px 120px;
+    }
+}
+@media (min-width:992px) {
+    footer .container{
+        justify-content: space-between;
+    }
+}
