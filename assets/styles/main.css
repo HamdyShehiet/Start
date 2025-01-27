@@ -16,8 +16,8 @@
     --white-color-75:rgba(255, 255, 255, 0.75);
     --white-color-50:rgba(255, 255, 255, 0.50);
     --white-color-25:rgba(255, 255, 255, 0.25);
-    --f-family:  "Crimson Text", serif;
-    --f-family:  "Work Sans", serif;
+    --ff-crimson-text:  "Crimson Text", serif;
+    --ff-work-sans:  "Work Sans", serif;
     --fs-40px:40px;
     --fs-32px:32px;
     --fs-28px:28px;
@@ -34,6 +34,7 @@ html{
 }
 body{
     background-color: var(--white-color-100);
+    font-weight: var(--fw-400);
 }
 .container{
     margin: auto;
@@ -57,4 +58,59 @@ textarea{
 }
 img{
     max-width: 100%;
+}
+/* Utility Classes */
+.grid{
+    display: grid;
+}
+.flex{
+    display: flex;
+}
+.i-flex{
+    display: inline-flex;
+    align-items: center;
+}
+h1.title{
+    font-size:clamp(var(--fs-28px) ,5vw, var(--fs-40px));
+    font-weight: var(--fw-700);
+    color: var(--dark-color-100);
+}
+h2.title{
+    font-size:clamp(var(--fs-24px) ,5vw, var(--fs-32px));
+    font-weight: var(--fw-700);
+    color: var(--dark-color-100);
+}
+h3.title{
+    font-size: var(--fs-28px);
+    font-weight: var(--fw-700);
+    color: var(--dark-color-100);
+}
+h3.subtitle{
+    font-size: var(--fs-24px);
+    font-weight: var(--fw-700);
+    color: var(--dark-color-100);
+}
+span.subtitle{
+    font-family: var(--ff-work-sans);
+    font-size: var(--fs-16px);
+    font-weight: var(--fw-700);
+}
+p.special-description{
+    font-family: var(--ff-work-sans);
+    font-size: var(--fs-20px);
+    color: var(--dark-color-100);
+}
+p.description{
+    font-family: var(--ff-work-sans);
+    font-size: var(--fs-15px);
+    color: var(--dark-color-50);
+}
+.link-btn{
+    display: inline-flex;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-family: var(--ff-work-sans);
+    font-size: var(--fs-20px);
+    background-color: var(--dark-color-100);
+    color: var(--white-color-100);
 }

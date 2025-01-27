@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green-color-100:#74c69d;
+    --white-color-100:#ffffff;
+    --ff-work-sans:  "Work Sans", serif;
+    --fs-40px:40px;
+    --fs-20px:20px;
+    --fw-700:700;
+    --fw-400:400;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    margin: auto;
+    width: min(1180px, 100% - 40px);
+}
+ul{
+    list-style: none;
+}
+a{
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+/* Utitlity Classes */
+.flex{
+    display: flex;
+}
+.i-flex{
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+}
