@@ -128,7 +128,6 @@ section{
 }
 .similar-section-one .container .image{
     text-align: center;
-    background-color: yellow;
 }
 .similar-section-two .container{
     flex-direction: column;
@@ -179,6 +178,16 @@ section{
 @media (min-width:992px) {
     .communication .container{
         grid-template-columns: 1fr 40%;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.analyze .container{
+    gap: 30px 80px;
+}
+@media (min-width:992px) {
+    .analyze .container{
+        grid-template-columns: 40% 1fr;
         align-items: center;
         justify-content: space-between;
     }
