@@ -33,12 +33,12 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: var(--white-color-100);
     font-weight: var(--fw-400);
+    background-color: var(--white-color-100);
 }
 .container{
-    margin: auto;
     width: min(1180px, 100% - 40px);
+    margin: auto;
 }
 ul{
     list-style: none;
@@ -94,6 +94,7 @@ span.subtitle{
     font-family: var(--ff-work-sans);
     font-size: var(--fs-16px);
     font-weight: var(--fw-700);
+    color: var(--green-color-100);
 }
 p.special-description{
     font-family: var(--ff-work-sans);
@@ -120,21 +121,33 @@ p.description{
 section{
     padding: var(--main-section-padding);
 }
-.similar-section .container article.info{
+.similar-section-one .container article.info{
     flex-direction: column;
     gap: 15px;
     align-items: start;
+}
+.similar-section-two .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+}
+.similar-section-two .container .info{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
 }
 .hero{
     background-color: var(--green-color-100);
 }
 .hero .container{
     row-gap: 30px;
-    min-height: calc(100vh - 160px);
+    min-height: calc(100vh - 170px);
 }
 .hero .container article.info h1,
-p.description,
-span.subtitle{
+.hero .container article.info p.description,
+.hero .container article.info span.subtitle{
     color: var(--white-color-100);
 }
 .hero .container article.info .link-btn{
@@ -147,8 +160,15 @@ span.subtitle{
 }
 @media (min-width:992px) {
     .hero .container{
-        grid-template-columns: 40% 55%;
+        grid-template-columns: 40% 1fr;
         align-items: center;
         justify-content: space-between;
     }
+}
+.partners .container .parteners-list{
+    grid-template-columns: repeat(auto-fit, min(180px ,100%));
+    justify-content: center;
+    align-items: center;
+    gap:30px 70px;
+    width: 100%;
 }
