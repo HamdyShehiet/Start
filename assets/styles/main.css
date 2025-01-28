@@ -142,7 +142,7 @@ section{
     background-color: var(--green-color-100);
 }
 .hero .container{
-    row-gap: 30px;
+    gap: 30px 40px;
     min-height: calc(100vh - 170px);
 }
 .hero .container article.info h1,
@@ -155,7 +155,7 @@ section{
     background-color: var(--white-color-100);
     color: var(--dark-color-100);
 }
-.hero .container .hero-image{
+.similar-section-one .container .image{
     text-align: center;
 }
 @media (min-width:992px) {
@@ -171,4 +171,15 @@ section{
     align-items: center;
     gap:30px 70px;
     width: 100%;
+}
+.communication .container{
+    gap: 30px 40px;
+}
+@media (min-width:992px) {
+    .communication .container{
+        grid-template-columns: 1fr 40%;
+        align-items: center;
+        gap: 40px;
+        justify-content: space-between;
+    }
 }
