@@ -126,6 +126,10 @@ section{
     gap: 15px;
     align-items: start;
 }
+.similar-section-one .container .image{
+    text-align: center;
+    background-color: yellow;
+}
 .similar-section-two .container{
     flex-direction: column;
     align-items: center;
@@ -155,9 +159,6 @@ section{
     background-color: var(--white-color-100);
     color: var(--dark-color-100);
 }
-.similar-section-one .container .image{
-    text-align: center;
-}
 @media (min-width:992px) {
     .hero .container{
         grid-template-columns: 40% 1fr;
@@ -173,13 +174,12 @@ section{
     width: 100%;
 }
 .communication .container{
-    gap: 30px 40px;
+    gap: 30px 80px;
 }
 @media (min-width:992px) {
     .communication .container{
         grid-template-columns: 1fr 40%;
         align-items: center;
-        gap: 40px;
         justify-content: space-between;
     }
 }
