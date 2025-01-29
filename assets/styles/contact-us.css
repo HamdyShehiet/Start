@@ -5,29 +5,18 @@
 }
 :root{
     --green-color-100:#74c69d;
-    --green-color-75:rgba(116, 198, 157, 0.75);
-    --green-color-50:rgba(116, 198, 157, 0.50);
-    --green-color-25:rgba(116, 198, 157, 0.25);
     --dark-color-100:#212529;
-    --dark-color-75:rgba(33, 37, 41, 0.75);
-    --dark-color-50:rgba(33, 37, 41, 0.50);
-    --dark-color-25:rgba(33, 37, 41, 0.25);
     --white-color-100:#ffffff;
-    --white-color-75:rgba(255, 255, 255, 0.75);
-    --white-color-50:rgba(255, 255, 255, 0.50);
-    --white-color-25:rgba(255, 255, 255, 0.25);
     --ff-crimson-text:  "Crimson Text", serif;
     --ff-work-sans:  "Work Sans", serif;
     --fs-40px:40px;
-    --fs-32px:32px;
     --fs-28px:28px;
-    --fs-24px:24px;
     --fs-20px:20px;
     --fs-16px:16px;
     --fs-15px:15px;
     --fw-700:700;
     --fw-400:400;
-    --main-section-padding: 45px 0;
+    --main-section-padding: 45px 0 75px 0;
 }
 html{
     scroll-behavior: smooth;
@@ -102,8 +91,49 @@ p.description{
     font-size: var(--fs-20px);
     background-color: var(--dark-color-100);
     color: var(--white-color-100);
+    cursor: pointer;
 }
 /* Component */
 section{
     padding: var(--main-section-padding);
+}
+section .container{
+    gap: 55px;
+}
+section .container .info{
+    text-align: center;
+    gap: 15px;
+    max-width: 450px;
+    width: 100%;
+}
+section .container .component{
+    grid-template-columns: repeat(auto-fit, min(575px, 100%));
+    justify-content: center;
+    align-items: center;
+    gap: 40px 30px;
+    width: 100%;
+}
+section .container .component .form-box form{
+    flex-direction: column;
+    gap: 20px;
+}
+section .container .component .form-box form >div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--ff-work-sans);
+    color: var(--dark-color-100);
+}
+section .container .component .form-box form >div label{
+    font-size: var(--fs-20px);
+}
+section .container .component .form-box form >div input{
+    padding: 10px;
+}
+section .container .component .form-box form >div textarea{
+    padding: 10px;
+    min-width:100%;
+    max-width: 100%;
+    max-height: 300px;
+    min-height: 80px;
 }
