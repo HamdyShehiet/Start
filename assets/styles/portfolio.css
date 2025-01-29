@@ -125,3 +125,24 @@ p.description{
 section{
     padding: var(--main-section-padding);
 }
+section .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+}
+section .container .info{
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    max-width: 450px;
+    width: 100%;
+}
+section .container .works-list{
+    grid-template-columns: repeat(auto-fit, min(570px, 100%));
+    justify-content: center;
+    gap: 40px 40px;
+    width: 100%;
+}
+section .container .works-list .col{
+    text-align: center;
+}
