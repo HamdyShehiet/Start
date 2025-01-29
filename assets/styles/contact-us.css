@@ -137,3 +137,6 @@ section .container .component .form-box form >div textarea{
     max-height: 300px;
     min-height: 80px;
 }
+section .container .component .map iframe{
+    width: 100%;
+}
