@@ -66,6 +66,10 @@ img{
 .flex{
     display: flex;
 }
+.flex-column{
+    flex-direction: column;
+    align-items: center;
+}
 .i-flex{
     display: inline-flex;
     align-items: center;
@@ -136,8 +140,8 @@ section{
 }
 .similar-section-two .container .info{
     flex-direction: column;
-    gap: 15px;
     text-align: center;
+    gap: 15px;
     max-width: 450px;
     width: 100%;
 }
@@ -201,8 +205,6 @@ section{
 }
 .our-team .container .our-team-list .col{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 20px;
     padding: 25px;
     border-radius: 5px;
